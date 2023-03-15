@@ -25,5 +25,4 @@ function Validation(values) {
   return error
 }
 
-console.log( "inside validtion: " + Validation)
 export default Validation

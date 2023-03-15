@@ -12,7 +12,12 @@ function Signup() {
 
   const navigate = useNavigate()
 
-  const [errors, setErrors] = useState({});
+  //const [errors, setErrors] = useState({});
+  const [errors, setErrors] = useState({
+    name: '',
+    email: '',
+    password: '',
+  });
 
   const handleInput = (event) => {
     setValues((prev) => ({
@@ -22,10 +27,11 @@ function Signup() {
   };
 
   const handleSubmit = (event) => {
-
     setErrors(Validation(values));
+    console.log("just right before axios")
     if (errors.name === '' && errors.email === '' && errors.password === '') {
-        axios.post('http://localhost:8081/signup', values)
+      console.log("just after axios");  
+      axios.post('http://localhost:8081/signup', values)
             .then(res => {
                 navigate('/')
             })
