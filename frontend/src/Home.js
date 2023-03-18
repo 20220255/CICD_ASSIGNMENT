@@ -6,6 +6,7 @@ function Home() {
   return (
     <div>
       <h1
+        id='homepage'
         style={{
           position: 'absolute',
           left: '50%',
@@ -13,9 +14,7 @@ function Home() {
           transform: 'translate(-50%, -50%)',
         }}
       >
-        <Badge bg='secondary' as='Button'>
-          Welcome to your Homepage
-        </Badge>
+        Welcome to your Homepage
       </h1>
     </div>
   );

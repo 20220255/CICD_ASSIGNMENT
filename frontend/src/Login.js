@@ -76,13 +76,19 @@ function Login() {
               <span className='text-danger'> {errors.password} </span>
             )}
           </div>
-          <button id='login' type='submit' onClick={handleSubmit} className='btn btn-success w-100'>
+          <button
+            id='login'
+            type='submit'
+            onClick={handleSubmit}
+            className='btn btn-success w-100'
+          >
             <strong>Log In</strong>
           </button>
           <p>You agree to our terms and policies</p>
           <Link
             to='/signup'
             className='btn btn-default border w-100 bg-light text-decoration-none'
+            id='createAccount'
           >
             Create Account
           </Link>
