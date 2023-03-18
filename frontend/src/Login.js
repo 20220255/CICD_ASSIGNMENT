@@ -33,7 +33,7 @@ function Login() {
             if (res.data === 'Success') {
               navigate('/home')
             } else {
-              alert('No records found.')
+              navigate('/')
             }
           })
           .catch(err => console.log("Error:" + err))
