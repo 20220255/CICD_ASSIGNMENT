@@ -73,7 +73,7 @@ function Login() {
               id='password'
             />
             {errors.password && (
-              <span className='text-danger'> {errors.password} </span>
+              <span id='validationMessage' className='text-danger'> {errors.password} </span>
             )}
           </div>
           <button

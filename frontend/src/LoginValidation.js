@@ -8,7 +8,7 @@ function Validation(values) {
   if (values.email === "") {
     error.email = "Name should not be empty"
   } else if (!email_pattern.test(values.email)) {
-    error.email = "Email did not match"
+    error.email = 'Email and/or password is incorrect';
   } else {
     error.email = ""
   }
@@ -17,7 +17,7 @@ function Validation(values) {
   if (values.password === "") {
     error.password = "Password should not be empty"
   } else if (!password_pattern.test(values.password)) {
-    error.password = "Password did not match"
+    error.password = 'Email and/or password is incorrect';
   } else {
     error.password = '';
   }
