@@ -84,7 +84,7 @@ function Signup() {
               <span className='text-danger'> {errors.password} </span>
             )}
           </div>
-          <button type='submit' onClick={handleSubmit} className='btn btn-success w-100'>
+          <button id='signup' type='submit' onClick={handleSubmit} className='btn btn-success w-100'>
             <strong>Sign Up</strong>
           </button>
           <p>You agree to our terms and policies</p>
