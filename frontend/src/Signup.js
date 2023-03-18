@@ -53,6 +53,7 @@ function Signup() {
               placeholder='Enter Name'
               className='form-control rounded-0'
               name='name'
+              id='name'
             />
             {errors.name && (
               <span className='text-danger'> {errors.name} </span>
